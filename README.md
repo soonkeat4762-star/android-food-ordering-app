@@ -33,4 +33,17 @@ Mini Project for Mobile Application Development
 
 ## 🖼️ Screenshots
 
-Application screenshots can be added here to show the user interface and main features.
+### Splash Screen
+![Splash Screen](images/pic-1.png)
+
+### Login Page
+![Login Page](images/pic-23.png)
+
+### Homepage
+![Homepage](images/pic-12.png)
+
+### Drinks Menu
+![Drinks Menu](images/pic-13.png)
+
+### Foods Menu
+![Foods Menu](images/pic-17.png)
