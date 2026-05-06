@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background5"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_login_title"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            android:text="@string/sign_up_title"
+            android:layout_marginTop="50dp"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_bold"
+            android:paddingBottom="10dp"
+            android:gravity="center"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/screen"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="50dp"
+            android:adjustViewBounds="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/dog_coffee"
+            tools:ignore="ImageContrastCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/signup_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:autofillHints=""
+                android:background="@drawable/border_coffee"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="8dp"
+                android:hint="@string/full_name"
+                android:inputType="text"
+                android:padding="8dp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:autofillHints=""
+                android:background="@drawable/border_coffee"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="8dp"
+                android:hint="@string/email_signup"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/signup_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:autofillHints=""
+                android:background="@drawable/border_coffee"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="8dp"
+                android:hint="@string/number_phone"
+                android:inputType="phone"
+                android:padding="8dp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize,TouchTargetSizeCheck" />
+
+
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_coffee"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="8dp"
+                android:hint="@string/password_signup"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/signup_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border_coffee"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="8dp"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                tools:ignore="TextContrastCheck,VisualLintTextFieldSize"
+                android:autofillHints="" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:text="@string/sign_up_btn"
+                android:id="@+id/signup_button"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/coco5"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                app:cornerRadius = "30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/loginRedirectText"
+                android:text="@string/signup_des"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/coco5"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

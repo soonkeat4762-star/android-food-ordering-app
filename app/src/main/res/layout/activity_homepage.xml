@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background5">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/introduction_screen_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".HomepageActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="40dp"
+            android:paddingTop="?attr/actionBarSize"
+            android:paddingEnd="40dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_ah_boy"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:text="@string/ah_boy"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_bold"
+                android:paddingBottom="10dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_kopitiam"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/coco11"
+                android:fontFamily="@font/roboto_bold"
+                android:text="@string/kopitiam"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:paddingBottom="25dp"
+                android:id="@+id/coffee_img"
+                android:adjustViewBounds="true"
+                app:lottie_rawRes="@raw/drip_coffee"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+
+            <TextView
+                android:id="@+id/homepage_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/autourone_regular"
+                android:text="@string/des_homepage"
+                android:textAlignment="center"
+                android:textColor="@color/coco13"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck,VisualLintLongText" />
+
+
+            <Button
+                android:id="@+id/btnlistdrink"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="60dp"
+                android:backgroundTint="@color/coco9"
+                android:text="@string/view_drinks_menu"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btnlistfood"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/coco9"
+                android:text="@string/view_foods_menu"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+
+            <Button
+                android:id="@+id/btnlistuser"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/coco9"
+                android:text="@string/view_lists_of_user"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/btnlogoutkopitiam"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/coco9"
+                android:text="@string/logout"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>
